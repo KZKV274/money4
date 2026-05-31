@@ -720,11 +720,11 @@ canvas { width: 100% !important; display: block; }
       <div class="conv-input-wrap">
         <input type="number" class="conv-amount" id="conv-from-amount" value="1000" oninput="updateConverter()">
         <select class="conv-select" id="conv-from" onchange="updateConverter()" style="margin-top:8px;">
-          <option value="KGS">🇰🇬 KGS — Сом</option>
+          <option value="KGS" selected>🇰🇬 KGS — Сом</option>
           <option value="USD">🇺🇸 USD — Доллар</option>
           <option value="EUR">🇪🇺 EUR — Евро</option>
           <option value="RUB">🇷🇺 RUB — Рубль</option>
-          <option value="KZT" selected>🇰🇿 KZT — Тенге</option>
+          <option value="KZT">🇰🇿 KZT — Тенге</option>
           <option value="CNY">🇨🇳 CNY — Юань</option>
           <option value="GBP">🇬🇧 GBP — Фунт</option>
           <option value="TRY">🇹🇷 TRY — Лира</option>
@@ -745,11 +745,11 @@ canvas { width: 100% !important; display: block; }
       </div>
     </div>
     <div class="conv-result" id="conv-result">— USD</div>
-    <div class="conv-rate" id="conv-rate">1 KZT = ... USD</div>
+    <div class="conv-rate" id="conv-rate">1 KGS = ... USD</div>
   </div>
 
   <div class="card" style="margin-bottom:16px;">
-    <div class="sec-title" style="margin-bottom:10px;"><h3>📊 Курсы к тенге</h3></div>
+    <div class="sec-title" style="margin-bottom:10px;"><h3>📊 Курсы к сом</h3></div>
     <div id="rates-table"></div>
   </div>
 
@@ -855,7 +855,7 @@ canvas { width: 100% !important; display: block; }
   </div>
 
   <div style="text-align:center;padding:20px;color:var(--text3);font-size:11px;font-family:'Space Mono',monospace;">
-    FinFlow v1.1 • PWA • Google Drive Sync
+    FinFlow v1.1 • PWA • KZKV
   </div>
 </div>
 
@@ -1274,8 +1274,8 @@ const CAT_COLORS = {
 };
 
 // ==================== CURRENCIES (offline rates) ====================
-const RATES_TO_KZT = {
-  KZT:1, USD:490, EUR:530, RUB:5.3, KGS:5.5, CNY:68, GBP:620, TRY:14
+const RATES_TO_KGS = {
+  KGS:1, USD:88, EUR:101, RUB:1.20, KZT:0.18, CNY:12.90, GBP:117, TRY:1.90
 };
 
 // ==================== STORAGE ====================
